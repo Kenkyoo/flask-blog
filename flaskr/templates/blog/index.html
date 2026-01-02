@@ -38,7 +38,11 @@
                 >Edit</a
             >
             {% endif %}
-            <a href="#" class="card-link">View</a>
+            <a
+                href="{{ url_for('blog.view', id=post['id']) }}"
+                class="card-link"
+                >View</a
+            >
         </div>
     </div>
 </div>
